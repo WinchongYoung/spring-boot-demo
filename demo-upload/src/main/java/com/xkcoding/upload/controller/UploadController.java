@@ -51,6 +51,8 @@ public class UploadController {
         if (file.isEmpty()) {
             return Dict.create().set("code", 400).set("message", "文件内容为空");
         }
+        // 此处没校验文件类型
+        // 另：https://www.jb51.net/article/242065.htm
         String fileName = file.getOriginalFilename();
         String rawFileName = StrUtil.subBefore(fileName, ".", true);
         String fileType = StrUtil.subAfter(fileName, ".", true);

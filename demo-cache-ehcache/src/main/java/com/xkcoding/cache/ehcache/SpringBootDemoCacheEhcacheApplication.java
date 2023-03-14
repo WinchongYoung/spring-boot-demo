@@ -15,8 +15,17 @@ import org.springframework.cache.annotation.EnableCaching;
 @SpringBootApplication
 @EnableCaching
 public class SpringBootDemoCacheEhcacheApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(SpringBootDemoCacheEhcacheApplication.class, args);
     }
 }
+
+/**
+ * 使用步骤：
+ * 1、在Application启动类添加EnableCaching方法
+ * 2、配置ehcache.xml文件，并在application.yml中引入
+ * 3、使用，常用操作
+ * CachePut   新增
+ * Cacheable  获取
+ * CacheEvict 删除
+ */
