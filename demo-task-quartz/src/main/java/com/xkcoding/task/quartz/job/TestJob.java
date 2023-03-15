@@ -18,6 +18,6 @@ public class TestJob implements BaseJob {
 
     @Override
     public void execute(JobExecutionContext context) {
-        log.error("Test Job 执行时间: {}", DateUtil.now());
+        log.info("Test Job 执行时间: {}", DateUtil.now());
     }
 }

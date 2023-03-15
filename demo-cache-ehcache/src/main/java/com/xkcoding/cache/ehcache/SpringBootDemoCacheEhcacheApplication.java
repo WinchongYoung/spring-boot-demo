@@ -21,8 +21,9 @@ public class SpringBootDemoCacheEhcacheApplication {
 }
 
 /**
+ * ehcache数据缓存在JVM中
  * 使用步骤：
- * 1、在Application启动类添加EnableCaching方法
+ * 1、在Application启动类添加EnableCaching注解
  * 2、配置ehcache.xml文件，并在application.yml中引入
  * 3、使用，常用操作
  * CachePut   新增

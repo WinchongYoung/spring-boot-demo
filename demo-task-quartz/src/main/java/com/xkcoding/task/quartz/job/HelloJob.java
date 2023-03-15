@@ -18,6 +18,6 @@ public class HelloJob implements BaseJob {
 
     @Override
     public void execute(JobExecutionContext context) {
-        log.error("Hello Job 执行时间: {}", DateUtil.now());
+        log.info("Hello Job 执行时间: {}", DateUtil.now());
     }
 }

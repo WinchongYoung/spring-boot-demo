@@ -18,3 +18,7 @@ public class SpringBootDemoTaskApplication {
         SpringApplication.run(SpringBootDemoTaskApplication.class, args);
     }
 }
+
+/**
+ * 任务类上加Component注解，任务调度方法上加Scheduled注解
+ */

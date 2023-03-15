@@ -24,7 +24,7 @@ import org.springframework.context.annotation.Configuration;
 public class XxlJobConfig {
     private final XxlJobProps xxlJobProps;
 
-    @Bean(initMethod = "start", destroyMethod = "destroy")
+    // @Bean(initMethod = "start", destroyMethod = "destroy")
     public XxlJobSpringExecutor xxlJobExecutor() {
         log.info(">>>>>>>>>>> xxl-job config init.");
         XxlJobSpringExecutor xxlJobSpringExecutor = new XxlJobSpringExecutor();
