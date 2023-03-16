@@ -83,7 +83,7 @@ public class SpringBootDemoZookeeperApplicationTests {
             try {
                 if (lock.acquire(1, TimeUnit.MINUTES)) {
                     doBuy();
-                    log.info("buy successfully!");
+                    log.info("buy " + count + "successfully!");
                 }
             } finally {
                 lock.release();
