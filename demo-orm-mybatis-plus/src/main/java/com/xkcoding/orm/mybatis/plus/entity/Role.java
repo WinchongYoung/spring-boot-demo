@@ -2,8 +2,7 @@ package com.xkcoding.orm.mybatis.plus.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
@@ -20,6 +19,9 @@ import java.io.Serializable;
 @TableName("orm_role")
 @Accessors(chain = true)
 @EqualsAndHashCode(callSuper = true)
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class Role extends Model<Role> {
     /**
      * 主键
