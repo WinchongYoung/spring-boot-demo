@@ -21,8 +21,11 @@ public class PropertyController {
     private final ApplicationProperty applicationProperty;
     private final DeveloperProperty developerProperty;
 
-    @Value("${username}")
+    @Value("${user.username}")
     private String userName;
+
+    @Value("${user.age}")
+    private Integer age;
 
     @Autowired
     public PropertyController(ApplicationProperty applicationProperty, DeveloperProperty developerProperty) {
@@ -38,6 +41,11 @@ public class PropertyController {
     @GetMapping("/property2")
     public String property2() {
         return userName;
+    }
+
+    @GetMapping("/age")
+    public Integer hello() {
+        return age;
     }
 
 }
